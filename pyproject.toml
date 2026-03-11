@@ -1,0 +1,22 @@
+[project]
+name = "cv-streaming-talk"
+version = "0.1.0"
+description = "Dummy project for Real-Time CV Streaming"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "lapx>=0.5.9",
+    "opencv-python>=4.11.0.86",
+    "torch>=2.6.0",
+    "torchvision>=0.21.0",
+    "ultralytics>=8.3.82",
+    "yt-dlp>=2025.2.19",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I"] # Habilita comprobaciones de errores, formato y orden de imports
+ignore = []
