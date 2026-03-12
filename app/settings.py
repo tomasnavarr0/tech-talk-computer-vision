@@ -6,7 +6,7 @@ class Settings(BaseSettings):
     model_config = SettingsConfigDict(env_file=".env", env_file_encoding="utf-8")
 
     CUDA: str = "cuda" if torch.cuda.is_available() else "cpu"
-    STREAM_URL: str
+    STREAM_URL: str = "https://www.youtube.com/watch?v=1EiC9bvVGnk"
 
 
 Settings = Settings()  # type: ignore
